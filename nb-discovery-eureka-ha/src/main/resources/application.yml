@@ -1,0 +1,7 @@
+
+spring:
+  application:
+    name: nb-discovery-eureka-ha
+  profiles:
+    active: peer1
+

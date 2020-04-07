@@ -1,0 +1,12 @@
+
+server:
+  port: 8762
+
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      #将自己注册到peer1这个Eureka上去
+      defaultZone:  http://peer1:8761/eureka/
