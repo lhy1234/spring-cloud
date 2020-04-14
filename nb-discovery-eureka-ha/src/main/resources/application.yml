@@ -1,7 +1,8 @@
 
 spring:
   application:
+    #Eureka集群的application.name一定要一样,注册到eureka server上的应用名
     name: nb-discovery-eureka-ha
   profiles:
-    active: peer1
+    active: peer2
 

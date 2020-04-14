@@ -26,7 +26,7 @@ public class UserController {
     private IUserService userService;
 
     @GetMapping("/{id}")
-    public User getById(@PathVariable int id){
+    public User findById(@PathVariable int id){
 
         return userService.getById(id);
     }

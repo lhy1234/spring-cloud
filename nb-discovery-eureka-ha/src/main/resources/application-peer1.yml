@@ -5,9 +5,14 @@ server:
 
 eureka:
   instance:
-    hostname: peer1
+    #hosts配置文件配置的主机名
+    hostname: eureka1.com
+    #将自己的IP注册到Eureka Server，如不配将操作系统的hostname注册到Eureka Server
+    prefer-ip-address: true
   client:
     service-url:
-      #将自己注册到peer2这个Eureka上去
-      defaultZone:  http://peer2:8762/eureka/
+      #将自己注册到eureka2.com这个Eureka上去
+      defaultZone:  http://eureka2.com:8762/eureka/
+
+
 

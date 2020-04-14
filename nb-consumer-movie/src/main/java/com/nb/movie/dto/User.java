@@ -17,7 +17,7 @@ import java.io.Serializable;
  * @since 2020-04-03
  */
 @Data
-public class UserDTO implements Serializable {
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
